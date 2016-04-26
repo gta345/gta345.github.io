@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,31 +13,31 @@
 <h2> 3. Waypoint spoofing.</h2>
 
 <h1> GPS Spoofing Principle </h1>
-<img src="http://s15.sinaimg.cn/middle/002Kx6Fvgy71deYGgyife&690" width="500" height="500">
+<img src="http://s3.amazonaws.com/img.tnt/0049a7f/d989_l.jpg" width="500" height="500">
 
 <p>In GPS system, we choose electromagnetic wave as the signal, so we know the velocity of electromagnetic wave , c. Then we try to get the duration t1 between sent and arrived.And we get the equation as below: </p>
 
-<img src="http://s14.sinaimg.cn/middle/002Kx6Fvgy71dffUfzndd&690">
+<img src="http://s3.amazonaws.com/img.tnt/0960640/ac50_l.jpg">
 
 <p>This equation cannot be solved since it has three unknowns. So we can simply add 
 another two positions (satellites) whose coordinates are already known too. So we get the equation set as below: </p>
-<img src="http://s1.sinaimg.cn/middle/002Kx6Fvgy71dfKzMTCe0&690">
+<img src="http://s3.amazonaws.com/img.tnt/41a83d8/06b5_l.jpg">
 
 <p> Now, our position coordinate (x, y, z) can be solved out of the equations.
 But it is not enough in engineering practice.  
 Because local clock and satellite clock are not synchronized, there is a time deviation ∆t1 between them. The revised equation set as below: </p>
-<img src="http://s6.sinaimg.cn/middle/002Kx6Fvgy71dffTBLD35&690">
+<img src="http://s3.amazonaws.com/img.tnt/d43325d/5b23_l.jpg">
 
 <p>The clocks carried by each GPS satellites are high precision atomic clocks, which are in strict synchronization state. So we have the following equation: </p>
 
-<img src="http://s3.sinaimg.cn/middle/002Kx6Fvgy71dffSIb882&690">
+<img src="http://s3.amazonaws.com/img.tnt/53c0fd8/41b3_l.jpg">
 
 <p>Still, we cannot solve this equation set for now. So we add the 4th satellite. 
 The equation set becomes:</p>
-<img src="http://s1.sinaimg.cn/middle/002Kx6Fvgy71dffV9QY00&690">
+<img src="http://s3.amazonaws.com/img.tnt/57d6415/289a_l.jpg">
 
 <h1> How to generate spoofing GPS signals</h1>
-<img src="http://s12.sinaimg.cn/middle/002Kx6Fvgy71dg3p5q38b&690">
+<img src="http://s3.amazonaws.com/img.tnt/76897cc/03b7_l.jpg">
 
 <h1>Simulation procedure: </h1>
 <p>1. Carrier Frequency: 1.57GHz. We generated the GPS signal tested on spectrum analyzer.</p>
@@ -44,10 +45,10 @@ The equation set becomes:</p>
 <p>We found the generated signal waveform seat around the center frequency 1.57GHz. </p>
 
 <p>2. We sent the signal into the airspace through USRP and tested the signal in my i-phone </p>
-<img src="http://s11.sinaimg.cn/middle/002Kx6Fvgy71dg61Ev03a&690" width="304" height="300">
+<img src="http://s3.amazonaws.com/img.tnt/1f2659a/c1f9_l.jpg" width="304" height="300">
 <p> This is the real location. After we sent the preset location information into airspace,
 The location information received by my phone has been changed: </p>
-<img src="http://s3.sinaimg.cn/middle/002Kx6Fvgy71dg60TIKd2&690" width="304" height="300">
+<img src="http://s3.amazonaws.com/img.tnt/7e3e77d/5f6a_l.jpg" width="304" height="300">
 <p> We can see that the GPS information in my phone has been changed to what we have sent 
 through USRP. </p>
 
