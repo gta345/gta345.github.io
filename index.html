@@ -1,70 +1,85 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>My UAV project</title>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+     
 </head>
+
 <body>
-
-<h1> Most popular method to attack UAV – GPS Spoofing </h1>
-<h2> 1. Non-flying zone spoofing. </h2>
-<h2> 2. Return-home point spoofing.</h2>
-<h2> 3. Waypoint spoofing.</h2>
-
-<h1> GPS Spoofing Principle </h1>
-<img src="http://s3.amazonaws.com/img.tnt/0049a7f/d989_l.jpg" width="500" height="500">
-
-<p>In GPS system, we choose electromagnetic wave as the signal, so we know the velocity of electromagnetic wave , c. Then we try to get the duration t1 between sent and arrived.And we get the equation as below: </p>
-
-<img src="http://s3.amazonaws.com/img.tnt/0960640/ac50_l.jpg">
-
-<p>This equation cannot be solved since it has three unknowns. So we can simply add 
-another two positions (satellites) whose coordinates are already known too. So we get the equation set as below: </p>
-<img src="http://s3.amazonaws.com/img.tnt/41a83d8/06b5_l.jpg">
-
-<p> Now, our position coordinate (x, y, z) can be solved out of the equations.
-But it is not enough in engineering practice.  
-Because local clock and satellite clock are not synchronized, there is a time deviation ∆t1 between them. The revised equation set as below: </p>
-<img src="http://s3.amazonaws.com/img.tnt/d43325d/5b23_l.jpg">
-
-<p>The clocks carried by each GPS satellites are high precision atomic clocks, which are in strict synchronization state. So we have the following equation: </p>
-
-<img src="http://s3.amazonaws.com/img.tnt/53c0fd8/41b3_l.jpg">
-
-<p>Still, we cannot solve this equation set for now. So we add the 4th satellite. 
-The equation set becomes:</p>
-<img src="http://s3.amazonaws.com/img.tnt/57d6415/289a_l.jpg">
-
-<h1> How to generate spoofing GPS signals</h1>
-<img src="http://s3.amazonaws.com/img.tnt/76897cc/03b7_l.jpg">
-
-<h1>Simulation procedure: </h1>
-<p>1. Carrier Frequency: 1.57GHz. We generated the GPS signal tested on spectrum analyzer.</p>
-<img src="http://s11.sinaimg.cn/middle/002Kx6Fvgy71dg6mLeWca&690" width="304" height="300">
-<p>We found the generated signal waveform seat around the center frequency 1.57GHz. </p>
-
-<p>2. We sent the signal into the airspace through USRP and tested the signal in my i-phone </p>
-<img src="http://s3.amazonaws.com/img.tnt/1f2659a/c1f9_l.jpg" width="304" height="300">
-<p> This is the real location. After we sent the preset location information into airspace,
-The location information received by my phone has been changed: </p>
-<img src="http://s3.amazonaws.com/img.tnt/7e3e77d/5f6a_l.jpg" width="304" height="300">
-<p> We can see that the GPS information in my phone has been changed to what we have sent 
-through USRP. </p>
-
-<h1> 3. Test on DJI Phantom I </h1>
-<p> We moved the testing platform to the open area.</p>
-
-<p>First, we got the longitude, latitude and elevation of the testing point.</p>
-
-<p>Second, we turned on UAV and make it hover in a specific elevation(eg. 20m).</p>
-
-<p>Then we generated the spoofing GPS signal and sent it into the airspace(we just changed
-the elevation parameter to 100m)</p>
-
-<p>Finally we found that the UAV dropped down to the ground. </p>
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DrDm7uO4Fu0" frameborder="0" allowfullscreen align="right"></iframe>
+                <h1>hello world!</h1>
+				
+				<h2> a few facts about the world we live in</h2>
+				
+				<img src="earth.jpg" width="400">
+				<p>Earth is the third planet from the Sun and is the largest of the terrestrial planets. The Earth is the only planet in our solar system not to be named after a Greek or Roman deity. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.</p>
+				
+				<hr>
+				<h3>about the earth</h3>
+				<ul>
+				   <li>Equatorial Diameter:	12,756 km</li>
+                     <li>Polar Diameter:	12,714 km</li>
+                    <li> Mass:	5.97 x 10^24 kg</li>
+                      <li> Moons:	1 <a href="http://space-facts.com/the-moon/">(The Moon)</a></li>
+			     </ul>
+				 
+				 <h3>top 3 facts about the earth</h3>
+				 <hr>
+				 <ol>
+                   <li> The Earth’s rotation is gradually slowing</li>
+                 <li>  The Earth was once believed to be the centre of the universe</li>
+                  <li> Earth has a powerful magnetic field</li>
+				  </ol>
+				  <hr>
+				  <table>
+				  <thead>
+				  <tr>
+				            <th>Name</th>
+							<th>Radius</th>
+							<th>Average<br>Temperture</th>
+							
+		
+				  
+				  </tr>
+				  </thead>
+				  <tbody>
+				  <tr>
+				  <td>Mars</td>
+				  <td>3,403km</td>
+				  <td> -46&deg;c</td>
+				  </tr>
+				  <tr>
+				  <td>Venus</td>
+				  <td>6,052km</td>
+				  <td> 462&deg;c</td>
+				  </tr>
+				  </tbody>
+				  
+				  
+				  
+				  
+				  
+				  </table>
+				  <hr>
+				  
+				  <form action="http://space-facts.com/earth/">
+				            <p>want to know more</p>
+							
+							<p></p><input type="submit" value="click Here"></p>
+				  
+				  
+				  
+				  </form>
+				  
+				 
+				
 </body>
+
+
 </html>
